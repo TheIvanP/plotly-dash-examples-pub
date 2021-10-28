@@ -1,2 +1,3 @@
-# plotly-dash-examples-pub
-dash and plotly examples
+# plotly-dash-examples
+
+examples of plotly and dash
