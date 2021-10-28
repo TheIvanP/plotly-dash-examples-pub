@@ -98,7 +98,7 @@ fig = px.histogram(
     y="pop",
     color="continent",
     title="Histogram of population sizes 2007",
-    height=400,
+    height=500,
 )
 fig.update_xaxes(categoryorder="total ascending")
 fig.show()
@@ -151,7 +151,6 @@ fig = px.sunburst(
     filtered_df,
     path=["continent", "country"],
     values="gdpPercap",
-    title="GDP divided by population size",
     title="GDP divided by population size",
     height=600,
 )
