@@ -98,6 +98,7 @@ fig = px.histogram(
     y="pop",
     color="continent",
     title="Histogram of population sizes 2007",
+    height=400,
 )
 fig.update_xaxes(categoryorder="total ascending")
 fig.show()
@@ -151,17 +152,8 @@ fig = px.sunburst(
     path=["continent", "country"],
     values="gdpPercap",
     title="GDP divided by population size",
-)
-fig.show()
-#%%
-# %% [markdown]
-# treemap
-#%%
-fig = px.treemap(
-    filtered_df,
-    path=["continent", "country"],
-    values="gdpPercap",
-    title="2007 Gross Domestic Product divided by population size",
+    title="GDP divided by population size",
+    height=600,
 )
 fig.show()
 #%%
@@ -186,6 +178,7 @@ fig = px.treemap(
     values="gdpPercap",
     color="pop",
     title="2007 Gross Domestic Product divided by population size<br>Highlight population size",
+    height=600,
 )
 fig = fig.update_coloraxes(showscale=False)
 fig.show()
